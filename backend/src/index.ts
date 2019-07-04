@@ -1,13 +1,23 @@
+import "reflect-metadata";
 import express from "express";
-import { appRouter } from "./controllers";
+import { createConnection, Connection } from "typeorm";
 
-require("dotenv").config();
+import { appRouter } from "./controllers";
+import ormconfig from "./ormconfig";
 
 const app = express();
 const port = process.env.MS_PORT;
 
 app.get("/", appRouter);
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}!`);
-});
+export let db: Connection;
+
+createConnection(ormconfig)
+    .then((connection) => {
+        db = connection;
+
+        app.listen(port, () => {
+            console.log(`Example app listening on port ${port}!`);
+        });
+    })
+    .catch(error => console.log(error));
