@@ -1,0 +1,7 @@
+.content__inner {
+	@include make-container();
+	@include make-container-max-widths();
+
+	display: flex;
+	flex-wrap: wrap;
+}

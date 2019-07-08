@@ -1,0 +1,15 @@
+.filter__list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter__list-item {
+	width: 20%;
+	margin-bottom: 10px;
+}
+
+.filter__list-label {
+	font-family: $main-font-family;
+}

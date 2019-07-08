@@ -2,6 +2,16 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-.header {
-		background-color: $teal;
-}
+$main-font-family: 'Montserrat', 'Tahoma', sans-serif;
+
+@import "header/inner/header__inner";
+@import "header/title/header__title";
+
+@import "faq/inner/faq__inner";
+@import "faq/title/faq__title";
+@import "faq/list/faq__list";
+@import "faq/description/faq__description";
+@import "filter/inner/filter__inner";
+@import "filter/list/filter__list";
+@import "content/inner/content__inner";
+@import "content/card/content__card";

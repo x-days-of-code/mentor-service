@@ -1,0 +1,4 @@
+.footer__inner {
+	@include make-container();
+	@include make-container-max-widths();
+}
