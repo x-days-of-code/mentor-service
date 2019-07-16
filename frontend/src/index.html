@@ -112,8 +112,10 @@
 						<span class="content__card-label content__card-label--css">CSS</span>
 					</p>
 					<h2 class="content__card-name">Некий Ментор</h2>
-					<p class="content__card-text">Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки
-												  Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки</p>
+					<p class="content__card-text">О счастье мы всегда лишь вспоминаем.
+												  А счастье всюду. Может быть, оно —
+												  Вот этот сад осенний за сараем
+												  И чистый воздух, льющийся в окно.</p>
 				</div>
 			</article>
 			<article class="content__card">
@@ -128,8 +130,10 @@
 						<span class="content__card-label content__card-label--css">CSS</span>
 					</p>
 					<h2 class="content__card-name">Некий Ментор</h2>
-					<p class="content__card-text">Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки
-												  Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки</p>
+					<p class="content__card-text">В бездонном небе легким белым краем
+												  Встает, сияет облако. Давно
+												  Слежу за ним… Мы мало видим, знаем,
+												  А счастье только знающим дано.</p>
 				</div>
 			</article>
 			<article class="content__card">
@@ -144,8 +148,9 @@
 						<span class="content__card-label content__card-label--css">CSS</span>
 					</p>
 					<h2 class="content__card-name">Некий Ментор</h2>
-					<p class="content__card-text">Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки
-												  Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки</p>
+					<p class="content__card-text">Окно открыто. Пискнула и села
+												  На подоконник птичка. И от книг
+												  Усталый взгляд я отвожу на миг.</p>
 				</div>
 			</article>
 			<article class="content__card">
@@ -160,24 +165,9 @@
 						<span class="content__card-label content__card-label--css">CSS</span>
 					</p>
 					<h2 class="content__card-name">Некий Ментор</h2>
-					<p class="content__card-text">Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки
-												  Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки</p>
-				</div>
-			</article>
-			<article class="content__card">
-				<div class="content__card-img-wrapper">
-					<img src="icons/avatar.jpg" alt="тут будет фото ментора" class="content__card-img">
-				</div>
-				<div class="content__card-description">
-					<p class="content__card-labels">
-						<span class="content__card-label content__card-label--html">HTML</span>,
-						<span class="content__card-label content__card-label--seo">SEO</span>,
-						<span class="content__card-label content__card-label--js">JavaScript</span>
-						<span class="content__card-label content__card-label--css">CSS</span>
-					</p>
-					<h2 class="content__card-name">Некий Ментор</h2>
-					<p class="content__card-text">Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки
-												  Пишите, звоните, высылайте посылки Пишите, звоните, высылайте посылки</p>
+					<p class="content__card-text">День вечереет, небо опустело.
+												  Гул молотилки слышен на гумне…
+												  Я вижу, слышу, счастлив. Все во мне.</p>
 				</div>
 			</article>
 		</div>
@@ -189,11 +179,30 @@
 <footer class="footer">
 	<!-- контакты, информация, ссылки -->
 </footer>
-<div class="overlay"></div>
 <div class="modal">
-	<div class="modal__content">
-
-	</div>
+	<button class="modal__close">&#215;</button>
+	<div class="modal__content"></div>
 </div>
+
+<script>
+	const contentCard = document.querySelectorAll('.content__card');
+	const modal = document.querySelector('.modal');
+	const modalClose = document.querySelector('.modal__close');
+	const modalContent = document.querySelector('.modal__content');
+
+
+	contentCard.forEach(el => {
+		el.addEventListener('click', () => {
+			console.log(el);
+			const text = el.querySelector('.content__card-text');
+			modal.classList.add('show');
+			modalContent.textContent = text.textContent;
+		})
+	});
+
+	modalClose.addEventListener('click', () => {
+		modal.classList.remove('show')
+	});
+</script>
 </body>
 </html>

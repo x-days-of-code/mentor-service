@@ -15,3 +15,6 @@ $main-font-family: 'Montserrat', 'Tahoma', sans-serif;
 @import "filter/list/filter__list";
 @import "content/inner/content__inner";
 @import "content/card/content__card";
+@import "modal/modal";
+@import "modal/content/modal__content";
+@import "modal/close/modal__close";
