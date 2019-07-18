@@ -1,0 +1,12 @@
+.modal__description {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	font-family: $main-font-family;
+	grid-area: info;
+}
+
+.modal__description-name,
+.modal__description-text {
+	margin-top: 0;
+}

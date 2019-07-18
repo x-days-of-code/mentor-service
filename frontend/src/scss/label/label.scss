@@ -1,0 +1,25 @@
+.label {
+	display: inline-flex;
+	font-size: $font-size-sm;
+	line-height: $line-height-sm;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #fff;
+	width: max-content
+}
+
+.label--html {
+	background-color: $blue;
+}
+
+.label--css {
+	background-color: $red;
+}
+
+.label--seo {
+	background-color: $teal;
+}
+
+.label--js {
+	background-color: $yellow;
+}

@@ -13,7 +13,7 @@
 	<!-- слоган -->
 	<div class="header__inner jumbotron">
 		<h1 class="header__title container display-1">
-				Welcome. Добро пожаловать.
+			Welcome. Добро пожаловать.
 		</h1>
 	</div>
 </header>
@@ -23,7 +23,7 @@
 			<ul class="faq__list">
 				<li class="faq__item">
 					<h2 class="faq__title">
-							Вопрос #1
+						Вопрос #1
 					</h2>
 
 					<p class="faq__description">
@@ -85,15 +85,15 @@
 					<li class="filter__list-item">
 						<input id="JavaScript" name="JavaScript" type="checkbox" class="filter__list-checkbox">
 						<label for="JavaScript" class="filter__list-label filter__list-label-ball">
-						 JavaScript </label></li>
+							JavaScript </label></li>
 					<li class="filter__list-item">
 						<input id="Frontend" name="Frontend" type="checkbox" class="filter__list-checkbox">
 						<label for="Frontend" class="filter__list-label filter__list-label-ball">
-						 Frontend </label></li>
+							Frontend </label></li>
 					<li class="filter__list-item">
 						<input id="Backend" name="Backend" type="checkbox" class="filter__list-checkbox">
 						<label for="Backend" class="filter__list-label filter__list-label-ball">
-						 Backend </label></li>
+							Backend </label></li>
 				</ul>
 			</form>
 		</div>
@@ -106,10 +106,10 @@
 				</div>
 				<div class="content__card-description">
 					<p class="content__card-labels">
-						<span class="content__card-label content__card-label--html">HTML</span>,
-						<span class="content__card-label content__card-label--seo">SEO</span>,
-						<span class="content__card-label content__card-label--js">JavaScript</span>
-						<span class="content__card-label content__card-label--css">CSS</span>
+						<span class="content__card-label label label--html">HTML</span>,
+						<span class="content__card-label label label--seo">SEO</span>,
+						<span class="content__card-label label label--js">JavaScript</span>
+						<span class="content__card-label label label--css">CSS</span>
 					</p>
 					<h2 class="content__card-name">Некий Ментор</h2>
 					<p class="content__card-text">О счастье мы всегда лишь вспоминаем.
@@ -181,28 +181,85 @@
 </footer>
 <div class="modal">
 	<button class="modal__close">&#215;</button>
-	<div class="modal__content"></div>
+	<div class="modal__content">
+
+		<div class="modal__img wrapper">
+			<img src="icons/avatar.jpg" alt="тут будет фото ментора" class="modal__img">
+		</div>
+		<p class="modal__labels label">
+			<span class="content__card-label label label--html">HTML</span>,
+			<span class="content__card-label label label--seo">SEO</span>,
+			<span class="content__card-label label label--js">JavaScript</span>
+			<span class="content__card-label label label--css">CSS</span>
+		</p>
+		<div class="modal__btns">
+			<button class="modal__btns_alarm">+</button>
+			<button class="modal__btns_add-review">Оставить отзыв</button>
+		</div>
+		<div class="modal__description">
+
+			<h2 class="modal__description-name">Некий Ментор</h2>
+			<p class="modal__description-text">О счастье мы всегда лишь вспоминаем.
+											   А счастье всюду. Может быть, оно —
+											   Вот этот сад осенний за сараем
+											   И чистый воздух, льющийся в окно.</p>
+		</div>
+		<div class="modal__review">
+			<article class="modal__article">
+				<p><strong><span>10</span> из 10</strong></p>
+				<p>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+					3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+					Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+					Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+					raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable.
+				</p>
+			</article>
+			<article class="modal__article">
+				<p><strong><span>5</span> из 10</strong></p>
+				<p>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+					3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+					Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+					Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+					raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable.
+				</p>
+			</article>
+			<article class="modal__article">
+				<p><strong><span>8</span> из 10</strong></p>
+				<p>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+					3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+					Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+					Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+					raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable.
+				</p>
+			</article>
+		</div>
+	</div>
 </div>
 
 <script>
-	const contentCard = document.querySelectorAll('.content__card');
-	const modal = document.querySelector('.modal');
-	const modalClose = document.querySelector('.modal__close');
-	const modalContent = document.querySelector('.modal__content');
+const contentCard = document.querySelectorAll(".content__card");
+const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal__close");
+const modalDescriptionText = document.querySelector(".modal__description-text");
 
+contentCard.forEach(el => {
+	el.addEventListener("click", () => {
+		console.log(el);
+		const text = el.querySelector(".content__card-text");
+		modal.classList.add("show");
+		modalDescriptionText.textContent = text.textContent;
+	})
+});
 
-	contentCard.forEach(el => {
-		el.addEventListener('click', () => {
-			console.log(el);
-			const text = el.querySelector('.content__card-text');
-			modal.classList.add('show');
-			modalContent.textContent = text.textContent;
-		})
-	});
-
-	modalClose.addEventListener('click', () => {
-		modal.classList.remove('show')
-	});
+modalClose.addEventListener("click", () => {
+	modal.classList.remove("show")
+});
 </script>
 </body>
 </html>
