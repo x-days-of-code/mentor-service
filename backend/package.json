@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "env-cmd": "^9.0.3",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "nodemon": "^1.19.1",
     "pg": "^7.11.0",
     "reflect-metadata": "^0.1.13",
